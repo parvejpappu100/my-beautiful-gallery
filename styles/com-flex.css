@@ -4,7 +4,6 @@ img{
 }
 /* First Section */
 .row{
-    height: 400px;
     margin-bottom: 5px;
 }
 /* Second Section */
@@ -37,4 +36,16 @@ img{
 }
 .third-row > div{
     flex: 1;
+}
+/* make responsive */
+@media screen and (max-width:576px) {
+    .second-row, .third-row{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+@media screen and (min-width:577px) {
+    .row{
+        height: 400px;
+    }
 }
